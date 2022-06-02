@@ -1,8 +1,8 @@
 # Notes:
-# - convert string to number
-#   A = 65, Z = 90, a = 97, z = 122
-# - wrap z to a
-# - keep the same case
+# ✓ convert string to ASCII decimal using #ord
+#   (A = 65, Z = 90, a = 97, z = 122)
+# ✓ wrap z to a
+# ✓ keep the same case
 # ? Check for valid key
 
 def caesar_cipher(string, key)
