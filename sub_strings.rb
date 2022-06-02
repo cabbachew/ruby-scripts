@@ -3,7 +3,7 @@
 # ✓ Second arg: dictionary (array of valid substrings)
 # ✓ Return a hash: each substring (case insensitive) => number of times
 # * Recall how to turn strings into arrays and vice versa
-# ? Optimize
+# ? Optimize (Finding substrings appears to be O(n^2))
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
