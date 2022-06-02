@@ -1,3 +1,8 @@
+# Notes:
+# - convert string to number
+# - wrap z to a
+# - keep the same case
+
 def caesar_cipher(string, key)
 
 end
