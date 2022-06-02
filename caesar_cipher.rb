@@ -7,7 +7,6 @@
 
 def caesar_cipher(string, key)
   puts cipher_text = encode(string.split(""), key).join("")
-  puts cipher_text.class
 end
 
 def encode(arr, key)
