@@ -20,6 +20,19 @@ def substrings(string, dictionary)
   puts result.sort.to_h # Sort hash keys alphabetically
 end
 
+# Alterative solution:
+# def substrings(text, dictionary)
+#   result = Hash.new(0)
+#   lowered_text = text.downcase
+
+#   dictionary.each do |word|
+#     matches = lowered_text.scan(word).length
+#     result[word] = matches unless matches == 0
+#   end
+
+#   return result
+# end
+
 # Tests
 substrings("below", dictionary)
 # => { "below" => 1, "low" => 1 }
