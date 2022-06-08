@@ -7,29 +7,23 @@
 # ? Alternative method: find maximum sub subarray of differences
 
 def stock_picker(array)
-  p sorted_prices = array.each_with_index.max(array.length)
-
-  # initialize variables to return
-  buy_on_index = 0
-  sell_on_index = 1
+  # Initialize
   max_profit = array[1] - array[0]
-  min_price = array[0]
-  min_price_index = 0
+  buy_date_index = 0
+  sell_date_index = 1
 
-  array.each_with_index do |price, index|
-    if price - min_price > max_profit
-      max_profit = price - min_price
-      sell_on_index = index
-      buy_on_index = min_price_index
-    end
-    if price < min_price
-      min_price = price
-      min_price_index = index
+  array.each_with_index do |sell_price, sell_index|
+    next if sell_index == 0
+    array[0...sell_index].each_with_index do |buy_price, buy_index|
+      if sell_price - buy_price > max_profit
+        max_profit = sell_price - buy_price
+        buy_date_index = buy_index
+        sell_date_index = sell_index
+      end
     end
   end
-  p [buy_on_index, sell_on_index, max_profit]
+  p [buy_date_index, sell_date_index]
 end
-
 
 # Test
 stock_picker([17,3,6,9,15,8,6,1,10])
