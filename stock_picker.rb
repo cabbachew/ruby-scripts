@@ -24,13 +24,3 @@ def stock_picker(array)
   end
   p [buy_date_index, sell_date_index]
 end
-
-# Test
-stock_picker([17,3,6,9,15,8,6,1,10])
-# => [1, 4]  # for a profit of $15 - $3 == $12
-puts ''
-stock_picker([2, 3, 10, 6, 4, 8, 1])
-# => [0, 2] # for a profit of $10 - $2 = $8
-puts ''
-stock_picker([7, 9, 5, 6, 3, 2])
-# => [0, 1] # for a profit of $9 - $7 = $2
