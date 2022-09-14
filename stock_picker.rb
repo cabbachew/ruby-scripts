@@ -5,6 +5,7 @@
 # * You need to buy before you can sell
 # * Edge cases: lowest day is last day OR highest day is first day
 # ? Alternative method: find maximum sum subarray of differences
+# https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
 
 def stock_picker(array)
   # Initialize
