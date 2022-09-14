@@ -4,7 +4,7 @@
 # * Days start at 0
 # * You need to buy before you can sell
 # * Edge cases: lowest day is last day OR highest day is first day
-# ? Alternative method: find maximum sub subarray of differences
+# ? Alternative method: find maximum sum subarray of differences
 
 def stock_picker(array)
   # Initialize
